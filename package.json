@@ -1,5 +1,5 @@
 {
-  "name": "wxp",
+  "name": "weapp-api-promise",
   "version": "1.0.0",
   "description": "Extend WeChat miniprogram's api to surport promise.",
   "main": "src/index.ts",
