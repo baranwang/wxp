@@ -10,8 +10,8 @@
     "noImplicitThis": true,
     "noImplicitReturns": true,
     "alwaysStrict": true,
-    "inlineSourceMap": true,
-    "inlineSources": true,
+    "inlineSourceMap": false,
+    "inlineSources": false,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -19,7 +19,6 @@
     "removeComments": true,
     "pretty": true,
     "strictPropertyInitialization": true,
-    "sourceMap": false,
     "outDir": "./dist",
     "lib": ["esnext"],
     "types": ["miniprogram-api-typings"]
