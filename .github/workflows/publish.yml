@@ -1,14 +1,16 @@
 name: Publish
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
       matrix:
-         node-version: [12.x]
+        node-version: [12.x]
     steps:
       - uses: actions/checkout@v1
       - name: Use Node.js ${{ matrix.node-version }}
@@ -16,7 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: npm install
-        run: npm i
+        run: npm i --production
       - name: npm publish
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
