@@ -17,9 +17,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install
+      - name: Install
         run: npm i --production
-      - name: npm publish
+      - name: Build
+        run: npx tsc
+      - name: Publish
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
           npm publish
