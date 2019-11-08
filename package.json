@@ -2,7 +2,8 @@
   "name": "weapp-api-promise",
   "version": "1.0.0",
   "description": "Extend WeChat miniprogram's api to surport promise.",
-  "main": "src/index.ts",
+  "main": "./src/index.ts",
+  "miniprogram": "src",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/baranwang/wxp.git"
