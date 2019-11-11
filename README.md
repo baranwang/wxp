@@ -112,6 +112,7 @@ import {
   navigateToMiniProgram,
   notifyBLECharacteristicValueChange,
   onBackgroundFetchData,
+  openBusinessView,
   openCard,
   openDocument,
   openLocation,

@@ -64,6 +64,7 @@ import __navigateTo from './api/navigateTo'
 import __navigateToMiniProgram from './api/navigateToMiniProgram'
 import __notifyBLECharacteristicValueChange from './api/notifyBLECharacteristicValueChange'
 import __onBackgroundFetchData from './api/onBackgroundFetchData'
+import __openBusinessView from './api/openBusinessView'
 import __openCard from './api/openCard'
 import __openDocument from './api/openDocument'
 import __openLocation from './api/openLocation'
@@ -277,6 +278,8 @@ export const navigateToMiniProgram = __navigateToMiniProgram
 export const notifyBLECharacteristicValueChange = __notifyBLECharacteristicValueChange
 /** 收到 backgroundFetch 数据时的回调 */
 export const onBackgroundFetchData = __onBackgroundFetchData
+/** 推荐物品到好物圈 */
+export const openBusinessView = __openBusinessView
 /** 查看微信卡包中的卡券 */
 export const openCard = __openCard
 /** 新开页面打开文档 */
@@ -507,6 +510,7 @@ export default {
   navigateToMiniProgram,
   notifyBLECharacteristicValueChange,
   onBackgroundFetchData,
+  openBusinessView,
   openCard,
   openDocument,
   openLocation,
