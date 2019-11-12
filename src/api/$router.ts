@@ -10,7 +10,7 @@ const encode = (str: string) => encodeURIComponent(str).replace(/[!'()*]/g, (c: 
 const router = (
   type: 'switchTab' | 'redirectTo' | 'navigateTo',
   location: string,
-  query: { [key: string]: string } = {},
+  query: Record<string, string> = {},
 ): Promise<WechatMiniprogram.GeneralCallbackResult | WechatMiniprogram.NavigateToSuccessCallbackResult | void> => {
   const querystring = Object.keys(query).map((key) => `${encode(key)}=${encode(query[key])}`).join('&')
   const url = querystring.length ? `${location}?${querystring}` : location
@@ -18,8 +18,8 @@ const router = (
 }
 
 export default {
-  navigate: (location: string, query?: { [key: string]: string }) => router('navigateTo', location, query),
-  redirect: (location: string, query?: { [key: string]: string }) => router('redirectTo', location, query),
+  navigate: (location: string, query?: Record<string, string>) => router('navigateTo', location, query),
+  redirect: (location: string, query?: Record<string, string>) => router('redirectTo', location, query),
   switchTab: (location: string) => router('switchTab', location),
   back: (option?: WechatMiniprogram.NavigateBackOption) => wxp.navigateBack(option),
 }

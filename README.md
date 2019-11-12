@@ -197,7 +197,7 @@ import {
 } from "weapp-api-promise";
 ```
 
-## \$router 方法
+## [\$router 方法](https://github.com/baranwang/wxp/blob/master/src/api/$router.ts)
 
 包含 `navigate`、`redirect`、`switchTab`、`back` 四个方法，分别对应原生的 `wx.navigateTo`、`wx.redirectTo`、`wx.switchTab`、`wx.navigateBack` 方法
 
