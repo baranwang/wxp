@@ -3,6 +3,7 @@ import __addCard from './api/addCard'
 import __addPhoneContact from './api/addPhoneContact'
 import __authorize from './api/authorize'
 import __canvasGetImageData from './api/canvasGetImageData'
+import __canvasPutImageData from './api/canvasPutImageData'
 import __canvasToTempFilePath from './api/canvasToTempFilePath'
 import __checkIsSoterEnrolledInDevice from './api/checkIsSoterEnrolledInDevice'
 import __checkIsSupportSoterAuthentication from './api/checkIsSupportSoterAuthentication'
@@ -156,6 +157,8 @@ export const addPhoneContact = __addPhoneContact
 export const authorize = __authorize
 /** 获取 canvas 区域隐含的像素数据 */
 export const canvasGetImageData = __canvasGetImageData
+/** 将像素数据绘制到画布 */
+export const canvasPutImageData = __canvasPutImageData
 /** 把当前画布指定区域的内容导出生成指定大小的图片 */
 export const canvasToTempFilePath = __canvasToTempFilePath
 /** 获取设备内是否录入如指纹等生物信息的接口 */
@@ -449,6 +452,7 @@ export default {
   addPhoneContact,
   authorize,
   canvasGetImageData,
+  canvasPutImageData,
   canvasToTempFilePath,
   checkIsSoterEnrolledInDevice,
   checkIsSupportSoterAuthentication,
