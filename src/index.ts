@@ -112,6 +112,7 @@ import __showActionSheet from './api/showActionSheet'
 import __showLoading from './api/showLoading'
 import __showModal from './api/showModal'
 import __showNavigationBarLoading from './api/showNavigationBarLoading'
+import __showRedPackage from './api/showRedPackage'
 import __showShareMenu from './api/showShareMenu'
 import __showTabBar from './api/showTabBar'
 import __showTabBarRedDot from './api/showTabBarRedDot'
@@ -376,6 +377,8 @@ export const showModal = __showModal
 /** 在当前页面显示导航条加载动画 */
 export const showNavigationBarLoading = __showNavigationBarLoading
 /** 显示当前页面的转发按钮 */
+export const showRedPackage = __showRedPackage
+/** 拉取h5领取红包封面页 */
 export const showShareMenu = __showShareMenu
 /** 显示 tabBar */
 export const showTabBar = __showTabBar
