@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install
-        run: npm i --production
+        run: npm i
       - name: Build
         run: npx tsc
       - name: Publish
