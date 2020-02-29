@@ -11,14 +11,15 @@ const router = (
   type: 'switchTab' | 'redirectTo' | 'navigateTo',
   location: string,
   query: Record<string, string> = {},
+  events?: WechatMiniprogram.NavigateToOption['events']
 ): Promise<any> => {
   const querystring = Object.keys(query).map((key) => `${encode(key)}=${encode(query[key])}`).join('&')
   const url = querystring.length ? `${location}?${querystring}` : location
-  return wxp[type]({ url }).catch(() => wx.redirectTo({ url }))
+  return wxp[type]({ url, events }).catch(() => wx.redirectTo({ url }))
 }
 
 export const $router = {
-  navigate: (location: string, query?: Record<string, string>): Promise<WechatMiniprogram.NavigateToSuccessCallbackResult> => router('navigateTo', location, query),
+  navigate: (location: string, query?: Record<string, string>, events?: WechatMiniprogram.NavigateToOption['events']): Promise<WechatMiniprogram.NavigateToSuccessCallbackResult> => router('navigateTo', location, query, events),
   redirect: (location: string, query?: Record<string, string>): Promise<WechatMiniprogram.GeneralCallbackResult> => router('redirectTo', location, query),
   switchTab: (location: string): Promise<WechatMiniprogram.GeneralCallbackResult> => router('switchTab', location),
   back: (option?: WechatMiniprogram.NavigateBackOption): Promise<WechatMiniprogram.GeneralCallbackResult> => wxp.navigateBack(option),
