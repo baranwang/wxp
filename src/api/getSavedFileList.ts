@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.WxGetSavedFileListSuccessCallbackResult> =>
-  promisify(wx.getSavedFileList)()
+export const getSavedFileList = ():
+  Promise<WechatMiniprogram.WxGetSavedFileListSuccessCallbackResult> => promisify(wx.getSavedFileList)()

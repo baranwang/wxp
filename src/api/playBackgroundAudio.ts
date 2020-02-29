@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.PlayBackgroundAudioOption):
+export const playBackgroundAudio = (option: WechatMiniprogram.PlayBackgroundAudioOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.playBackgroundAudio)(option)

@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.vibrateLong)()
+export const vibrateLong = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.vibrateLong)()

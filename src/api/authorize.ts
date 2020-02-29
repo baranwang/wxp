@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.AuthorizeOption):
+export const authorize = (option: WechatMiniprogram.AuthorizeOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.authorize)(option)

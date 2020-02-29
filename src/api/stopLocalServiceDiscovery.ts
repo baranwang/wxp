@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.stopLocalServiceDiscovery)()
+export const stopLocalServiceDiscovery = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.stopLocalServiceDiscovery)()

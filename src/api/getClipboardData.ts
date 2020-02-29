@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.GetClipboardDataOption):
+export const getClipboardData = (option: WechatMiniprogram.GetClipboardDataOption):
   Promise<WechatMiniprogram.GetClipboardDataSuccessCallbackOption> => promisify(wx.getClipboardData)(option)

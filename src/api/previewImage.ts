@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.PreviewImageOption):
+export const previewImage = (option: WechatMiniprogram.PreviewImageOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.previewImage)(option)

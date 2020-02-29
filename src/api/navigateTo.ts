@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.NavigateToOption):
+export const navigateTo = (option: WechatMiniprogram.NavigateToOption):
   Promise<WechatMiniprogram.NavigateToSuccessCallbackResult> => promisify(wx.navigateTo)(option)

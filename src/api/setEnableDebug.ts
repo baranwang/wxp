@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.SetEnableDebugOption):
+export const setEnableDebug = (option: WechatMiniprogram.SetEnableDebugOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.setEnableDebug)(option)

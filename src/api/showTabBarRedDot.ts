@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.ShowTabBarRedDotOption):
+export const showTabBarRedDot = (option: WechatMiniprogram.ShowTabBarRedDotOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.showTabBarRedDot)(option)

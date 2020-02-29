@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.stopAccelerometer)()
+export const stopAccelerometer = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.stopAccelerometer)()

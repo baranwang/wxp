@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideHomeButton)()
+export const hideHomeButton = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideHomeButton)()

@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.LoadFontFaceOption):
+export const loadFontFace = (option: WechatMiniprogram.LoadFontFaceOption):
   Promise<WechatMiniprogram.LoadFontFaceSuccessCallbackResult> => promisify(wx.loadFontFace)(option)

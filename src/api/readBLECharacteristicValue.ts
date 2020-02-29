@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.ReadBLECharacteristicValueOption):
+export const readBLECharacteristicValue = (option: WechatMiniprogram.ReadBLECharacteristicValueOption):
   Promise<WechatMiniprogram.BluetoothError> => promisify(wx.readBLECharacteristicValue)(option)

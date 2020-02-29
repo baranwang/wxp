@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.AddPhoneContactOption):
+export const addPhoneContact = (option: WechatMiniprogram.AddPhoneContactOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.addPhoneContact)(option)

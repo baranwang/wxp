@@ -1,6 +1,6 @@
 {
   "name": "weapp-api-promise",
-  "version": "1.2.4",
+  "version": "2.0.0",
   "description": "Extend WeChat miniprogram's api to surport promise.",
   "main": "src/index.ts",
   "miniprogram": "dist",
@@ -11,9 +11,9 @@
   "author": "Baran",
   "license": "MIT",
   "devDependencies": {
-    "miniprogram-api-typings": "^2.10.1",
-    "tslint": "^6.0.0",
-    "typescript": "^3.7.5"
+    "miniprogram-api-typings": "latest",
+    "tslint": "latest",
+    "typescript": "latest"
   },
   "bugs": {
     "url": "https://github.com/baranwang/wxp/issues"

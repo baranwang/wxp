@@ -1,6 +1,6 @@
 import promisify from '../promisify'
 
-export default (
+export const canvasGetImageData = (
   option: WechatMiniprogram.CanvasGetImageDataOption,
   component?: WechatMiniprogram.Component.TrivialInstance | WechatMiniprogram.Page.TrivialInstance,
 ): Promise<WechatMiniprogram.CanvasGetImageDataSuccessCallbackResult> =>

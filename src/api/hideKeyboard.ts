@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideKeyboard)()
+export const hideKeyboard = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideKeyboard)()

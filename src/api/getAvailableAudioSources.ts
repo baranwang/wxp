@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default ():
+export const getAvailableAudioSources = ():
   Promise<WechatMiniprogram.GetAvailableAudioSourcesSuccessCallbackResult> => promisify(wx.getAvailableAudioSources)()

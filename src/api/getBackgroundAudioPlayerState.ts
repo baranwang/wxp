@@ -1,5 +1,4 @@
 import promisify from '../promisify'
 
-export default ():
-  Promise<WechatMiniprogram.GetBackgroundAudioPlayerStateSuccessCallbackResult> =>
+export const getBackgroundAudioPlayerState = (): Promise<WechatMiniprogram.GetBackgroundAudioPlayerStateSuccessCallbackResult> =>
   promisify(wx.getBackgroundAudioPlayerState)()

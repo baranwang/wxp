@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.ConnectWifiOption):
+export const connectWifi = (option: WechatMiniprogram.ConnectWifiOption):
   Promise<WechatMiniprogram.WifiError> => promisify(wx.connectWifi)(option)

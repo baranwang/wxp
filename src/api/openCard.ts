@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.OpenCardOption):
+export const openCard = (option: WechatMiniprogram.OpenCardOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.openCard)(option)

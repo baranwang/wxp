@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.WifiError> => promisify(wx.stopWifi)()
+export const stopWifi = ():
+  Promise<WechatMiniprogram.WifiError> => promisify(wx.stopWifi)()

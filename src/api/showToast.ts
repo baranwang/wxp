@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.ShowToastOption):
+export const showToast = (option: WechatMiniprogram.ShowToastOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.showToast)(option)

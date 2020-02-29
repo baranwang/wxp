@@ -1,5 +1,5 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.CheckIsSupportSoterAuthenticationOption):
+export const checkIsSupportSoterAuthentication = (option: WechatMiniprogram.CheckIsSupportSoterAuthenticationOption):
   Promise<WechatMiniprogram.CheckIsSupportSoterAuthenticationSuccessCallbackResult> =>
   promisify(wx.checkIsSupportSoterAuthentication)(option)

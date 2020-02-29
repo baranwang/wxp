@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.CreateBLEConnectionOption):
+export const createBLEConnection = (option: WechatMiniprogram.CreateBLEConnectionOption):
   Promise<WechatMiniprogram.BluetoothError> => promisify(wx.createBLEConnection)(option)

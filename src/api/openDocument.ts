@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.OpenDocumentOption):
+export const openDocument = (option: WechatMiniprogram.OpenDocumentOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.openDocument)(option)

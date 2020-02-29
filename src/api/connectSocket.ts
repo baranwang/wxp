@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.ConnectSocketOption):
+export const connectSocket = (option: WechatMiniprogram.ConnectSocketOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.connectSocket)(option)

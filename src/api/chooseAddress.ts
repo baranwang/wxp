@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.ChooseAddressSuccessCallbackResult> => promisify(wx.chooseAddress)()
+export const chooseAddress = (): Promise<WechatMiniprogram.ChooseAddressSuccessCallbackResult> => promisify(wx.chooseAddress)()

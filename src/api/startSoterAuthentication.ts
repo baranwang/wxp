@@ -1,5 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.StartSoterAuthenticationOption):
-  Promise<WechatMiniprogram.StartSoterAuthenticationSuccessCallbackResult> =>
-  promisify(wx.startSoterAuthentication)(option)
+export const startSoterAuthentication = (option: WechatMiniprogram.StartSoterAuthenticationOption):
+  Promise<WechatMiniprogram.StartSoterAuthenticationSuccessCallbackResult> => promisify(wx.startSoterAuthentication)(option)

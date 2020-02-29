@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option?: WechatMiniprogram.SetTabBarStyleOption):
+export const setTabBarStyle = (option?: WechatMiniprogram.SetTabBarStyleOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.setTabBarStyle)(option)

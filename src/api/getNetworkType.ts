@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GetNetworkTypeSuccessCallbackResult> => promisify(wx.getNetworkType)()
+export const getNetworkType = (): Promise<WechatMiniprogram.GetNetworkTypeSuccessCallbackResult> => promisify(wx.getNetworkType)()

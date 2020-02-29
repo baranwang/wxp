@@ -21,5 +21,5 @@ interface IWx extends WechatMiniprogram.Wx {
   openBusinessView(option: IOpenBusinessViewOption): WechatMiniprogram.GeneralCallbackResult
 }
 
-export default (option: IOpenBusinessViewOption):
+export const openBusinessView = (option: IOpenBusinessViewOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify((wx as IWx).openBusinessView)(option)

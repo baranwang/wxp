@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.HideTabBarOption):
+export const hideTabBar = (option: WechatMiniprogram.HideTabBarOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideTabBar)(option)

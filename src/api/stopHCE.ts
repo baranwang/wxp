@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.NFCError> => promisify(wx.stopHCE)()
+export const stopHCE = ():
+  Promise<WechatMiniprogram.NFCError> => promisify(wx.stopHCE)()

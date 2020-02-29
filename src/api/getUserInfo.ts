@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.GetUserInfoOption):
+export const getUserInfo = (option: WechatMiniprogram.GetUserInfoOption):
   Promise<WechatMiniprogram.GetUserInfoSuccessCallbackResult> => promisify(wx.getUserInfo)(option)

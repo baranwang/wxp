@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.onBackgroundFetchData)()
+export const onBackgroundFetchData = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.onBackgroundFetchData)()

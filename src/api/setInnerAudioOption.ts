@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.SetInnerAudioOption):
+export const setInnerAudioOption = (option: WechatMiniprogram.SetInnerAudioOption):
   Promise<WechatMiniprogram.ChooseVideoSuccessCallbackResult> => promisify(wx.setInnerAudioOption)(option)

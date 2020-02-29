@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GetExtConfigSuccessCallbackResult> => promisify(wx.getExtConfig)()
+export const getExtConfig = (): Promise<WechatMiniprogram.GetExtConfigSuccessCallbackResult> => promisify(wx.getExtConfig)()

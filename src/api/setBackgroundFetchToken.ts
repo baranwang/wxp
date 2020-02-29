@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.SetBackgroundFetchTokenOption):
+export const setBackgroundFetchToken = (option: WechatMiniprogram.SetBackgroundFetchTokenOption):
   Promise<WechatMiniprogram.GetStorageSuccessCallbackResult> => promisify(wx.setBackgroundFetchToken)(option)

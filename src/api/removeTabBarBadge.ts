@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.RemoveTabBarBadgeOption):
+export const removeTabBarBadge = (option: WechatMiniprogram.RemoveTabBarBadgeOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.removeTabBarBadge)(option)

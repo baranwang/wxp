@@ -1,5 +1,5 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.GetBLEDeviceCharacteristicsOption):
+export const getBLEDeviceCharacteristics = (option: WechatMiniprogram.GetBLEDeviceCharacteristicsOption):
   Promise<WechatMiniprogram.GetBLEDeviceCharacteristicsSuccessCallbackResult> =>
   promisify(wx.getBLEDeviceCharacteristics)(option)

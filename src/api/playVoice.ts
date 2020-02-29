@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.PlayVoiceOption):
+export const playVoice = (option: WechatMiniprogram.PlayVoiceOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.playVoice)(option)

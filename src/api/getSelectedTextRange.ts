@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option?: WechatMiniprogram.GetSelectedTextRangeOption):
+export const getSelectedTextRange = (option?: WechatMiniprogram.GetSelectedTextRangeOption):
   Promise<WechatMiniprogram.GetSelectedTextRangeSuccessCallbackResult> => promisify(wx.getSelectedTextRange)(option)

@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.startCompass)()
+export const startCompass = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.startCompass)()

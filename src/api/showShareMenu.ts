@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.ShowShareMenuOption):
+export const showShareMenu = (option: WechatMiniprogram.ShowShareMenuOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.showShareMenu)(option)

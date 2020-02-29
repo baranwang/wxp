@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.WxSaveFileOption):
+export const saveFile = (option: WechatMiniprogram.WxSaveFileOption):
   Promise<WechatMiniprogram.WxSaveFileSuccessCallbackResult> => promisify(wx.saveFile)(option)

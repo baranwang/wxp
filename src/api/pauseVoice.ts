@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.pauseVoice)()
+export const pauseVoice = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.pauseVoice)()

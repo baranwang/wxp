@@ -1,6 +1,6 @@
 import promisify from '../promisify'
 
-export default (
+export const canvasToTempFilePath = (
   option: WechatMiniprogram.CanvasToTempFilePathOption,
   component?: WechatMiniprogram.Component.TrivialInstance | WechatMiniprogram.Page.TrivialInstance,
 ): Promise<WechatMiniprogram.CanvasToTempFilePathSuccessCallbackResult> =>

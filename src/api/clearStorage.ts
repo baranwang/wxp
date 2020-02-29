@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.clearStorage)()
+export const clearStorage = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.clearStorage)()

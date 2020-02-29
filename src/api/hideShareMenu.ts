@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideShareMenu)()
+export const hideShareMenu = (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.hideShareMenu)()

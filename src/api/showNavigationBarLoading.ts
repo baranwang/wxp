@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.showNavigationBarLoading)()
+export const showNavigationBarLoading = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.showNavigationBarLoading)()

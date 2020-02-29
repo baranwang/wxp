@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.SetNavigationBarColorOption):
+export const setNavigationBarColor = (option: WechatMiniprogram.SetNavigationBarColorOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.setNavigationBarColor)(option)

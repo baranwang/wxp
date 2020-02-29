@@ -1,3 +1,3 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.NFCError> => promisify(wx.getHCEState)()
+export const getHCEState = (): Promise<WechatMiniprogram.NFCError> => promisify(wx.getHCEState)()

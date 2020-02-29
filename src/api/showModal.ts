@@ -1,4 +1,4 @@
-export default (option: WechatMiniprogram.ShowModalOption):
+export const showModal = (option: WechatMiniprogram.ShowModalOption):
   Promise<WechatMiniprogram.ShowModalSuccessCallbackResult> => new Promise(
     (resolve, reject) => wx.showModal({
       ...option,

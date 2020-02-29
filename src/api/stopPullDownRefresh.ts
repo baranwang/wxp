@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.stopPullDownRefresh)()
+export const stopPullDownRefresh = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.stopPullDownRefresh)()

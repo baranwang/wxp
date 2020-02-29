@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.PageScrollToOption):
+export const setTopBarText = (option: WechatMiniprogram.PageScrollToOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.setTopBarText)(option)

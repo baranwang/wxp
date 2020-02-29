@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.pauseBackgroundAudio)()
+export const pauseBackgroundAudio = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.pauseBackgroundAudio)()

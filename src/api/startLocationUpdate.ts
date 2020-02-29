@@ -1,3 +1,4 @@
 import promisify from '../promisify'
 
-export default (): Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.startLocationUpdate)()
+export const startLocationUpdate = ():
+  Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.startLocationUpdate)()

@@ -1,4 +1,4 @@
 import promisify from '../promisify'
 
-export default (option: WechatMiniprogram.SetKeepScreenOnOption):
+export const setKeepScreenOn = (option: WechatMiniprogram.SetKeepScreenOnOption):
   Promise<WechatMiniprogram.GeneralCallbackResult> => promisify(wx.setKeepScreenOn)(option)
